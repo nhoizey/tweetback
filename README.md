@@ -26,6 +26,8 @@ Take ownership of your Twitter data. First talked about at [Jamstack Conf 2019](
 
 ## Usage
 
+* Clone/download this repository
+* In your terminal, `cd` to the folder of the project
 * Install [Node.js](https://nodejs.org/)
 * Run `npm install`
 
@@ -42,7 +44,7 @@ Take ownership of your Twitter data. First talked about at [Jamstack Conf 2019](
 1. Edit the `_data/metadata.js` file to add metadata information.
 1. Run `npm run build` or `npm start`
 
-Note that the first build may take quite a long time (depending on the size of your archive), as remote media is fetched/downloaded into your project locally. Repeat builds will be much faster.
+⚠️ _Warning_: the first build may take quite a long time (depending on the size of your archive), as remote media is fetched/downloaded into your project locally. Repeat builds will be much faster.
 
 ### Fetch additional tweets from the API (optional)
 
@@ -54,3 +56,8 @@ If you want to fetch additional tweets from the API and put them into your sqlit
 ### Add your production URL to `@tweetback/canonical` (optional)
 
 https://github.com/tweetback/tweetback-canonical has a `mapping.js` file that stores the existing twitter username => canonical URL mappings. These will be transformed automatically to point to other archives in all `tweetback` instances.
+
+### Publish your archive (optional)
+
+- To [GitHub Pages](docs/deploy-with-github-pages.md)
+
